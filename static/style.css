@@ -1,0 +1,204 @@
+.bg-nav{
+
+     background: #f857a6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body{
+  font-family:'Concert One', sans-serif;
+}
+.bg2-nav{
+background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.navbar{
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.company-name {
+  color:white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+*{
+margin:0;
+padding:0
+box-sizing:border-box;
+font-family:'poppins',sans-serif;
+}
+body{
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-item:center;
+transition:0.6s;
+padding:40px 100px;
+z-padding:100000;
+}
+header ul{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+header ul li
+{
+position:relative;
+list-style:none;
+
+}
+header ul li a
+{
+position:relative
+margin:0 15px;
+text-decoration:none;
+letter-spacing:20x;
+font-weight:500px;
+transition:0.6s
+
+}
+.company-name a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar li {
+  float: left;
+
+}
+
+.navbar a {
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+    font-family:'Concert One', sans-serif;
+}
+
+.navbar a:hover {
+  text-transform: uppercase;
+}
+
+
+
+.container{
+       margin-top: 50px;
+       height:550px;
+       width:;
+        font-family:'Concert One', sans-serif;
+      }
+.navbar{
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+footer{
+background-color:gray;
+ font-family:'Concert One', sans-serif;
+}
+.footerContainer{
+  width:100%;
+  padding:70px 30px 20px
+    font-family:'Concert One', sans-serif;
+}
+.socialIcons{
+   display:flex;
+   justify-content:center;
+
+}
+.socialIcons a{
+    text-decoration:none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    border-radius:50%;
+}
+
+.socialIcons a i{
+    font-size:2em;
+    color:black
+    opacity:0.9;
+
+}
+.socialIcons a:hover{
+   background:gray;
+   transition:0.5s;
+}
+.socialIcons a:hover i{
+     color:white;
+     transition:0.5s;
+}
+.footerNav{
+   margin:30px 0;
+}
+.footerNav ul{
+   display:flex;
+   justify-content:center;
+   list-style-type:none;
+     font-family:'Concert One', sans-serif;
+}
+.footerNav ul li a{
+     color:white;
+     margin:20px;
+     text-decoration:none;
+     font-size:1.3em;
+     opacity:0.7;
+     transition:0.5;
+       font-family:'Concert One', sans-serif;
+}
+.footerNav ul li a:hover{
+     opacity:1;
+      text-transform: uppercase;
+}
+.footerBottom{
+  background-color:#000;
+  padding:15px;
+  text-align:center;
+  color:white;
+}
+.designer{
+    opacity:0.7;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    font-weight:400;
+    margin:0px 5px;
+     font-family:'Concert One', sans-serif;
+}
+        .rating {
+            display: inline-block;
+            font-size: 24px;
+              font-family:'Concert One', sans-serif;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            color:gray;
+            cursor: pointer;
+        }
+        .rating label:hover,
+        .rating > label:hover ~ label,
+        .rating > input:checked ~ label {
+            color:yellow;
+        }
