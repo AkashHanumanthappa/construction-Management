@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customer_dashboard</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Paytone+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <style>
+
+div{
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   }
+</style>
+</head>
+<body>
+<header class="navbar">
+   <h3 style="color:white;font-family:'Paytone One', sans-serif">Material supply chain</h3>
+  <ul>
+    <li><a href="/" >Home</a></li>
+           {% if signup %}
+    <li style="color:white;font-family:'Concert One', sans-serif;"><a>{{signup[1]}}</a></li>
+          {% endif %}
+    <li><a href="/cust">Dashboard</a></li>
+  </ul>
+</header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+    <h1 style="color:black;text-align:center;font-family:'Paytone One', sans-serif;margin-top:100px;">AP constructions</h1>
+    <p style="padding-top:10px; font-family:'Concert One', sans-serif;text-align:center;margin-bottom:-30px;">Your project details</p>
+<div class=" container" style="width:600px;height:365px;border:1px solid black">
+<table class="table" style="margin-top:10px">
+   <thead>
+   <tr  class="table-active table-bordered">
+    <th style="padding-top:10px; font-family:'Concert One', sans-serif;">column1</th>
+    <th style="padding-top:10px; font-family:'Concert One', sans-serif;">column2</th>
+   </tr>
+   </thead>
+    <tr  class="table table-bordered border-primary" style="margin-top:10px">
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Name</th>
+        <td scope="row">{{customer[1]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary" >
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Phone</th>
+        <td>{{customer[2]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary">
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Address</th>
+       <td>{{customer[3]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary">
+      <th scope="row"  style="padding-top:10px; font-family:'Concert One', sans-serif;">Project</th>
+      <td>{{customer[4]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary">
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Total_Amt(Rs)</th>
+      <td>{{customer[5]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary">
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Paid(Rs)</th>
+      <td>{{customer[6]}}</td>
+    </tr>
+    <tr  class="table table-bordered border-primary">
+      <th scope="row" style="padding-top:10px; font-family:'Concert One', sans-serif;">Remaining(Rs)</th>
+      <td>{{customer[7]}}</td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>
